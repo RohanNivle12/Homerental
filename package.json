@@ -1,0 +1,31 @@
+{
+  "name": "homefinder",
+  "version": "1.0.0",
+  "description": "HomeFinder - Full-Stack Real Estate Rental Platform",
+  "scripts": {
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build:server": "npm --prefix server run build",
+    "build:client": "npm --prefix client run build",
+    "build": "npm run build:server && npm run build:client",
+    "test:server": "npm --prefix server test",
+    "test": "npm run test:server",
+    "prisma:generate": "npm --prefix server run prisma:generate",
+    "prisma:push": "npx --prefix server prisma db push --schema=server/prisma/schema.prisma",
+    "prisma:seed": "npx --prefix server ts-node server/prisma/seed.ts"
+  },
+  "keywords": [
+    "real-estate",
+    "rental",
+    "nobroker",
+    "react",
+    "typescript",
+    "express",
+    "prisma",
+    "mysql",
+    "postgresql",
+    "google-maps"
+  ],
+  "author": "HomeFinder Engineering Team",
+  "license": "MIT"
+}
